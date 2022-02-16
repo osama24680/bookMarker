@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>DevFolio</title>
+</head>
+
+<body>
+    <!-- ==============================----------------header (77)------------------============================== -->
+    <header class="mycontainer">
+        <h1>Bookmarker</h1>
+
+        <div class="generalForm text-center text-black mx-auto">
+            <div class="userForm">
+                <h3>Bookmark your favorite sites</h3>
+                <label class="mt-4 mb-3 fs-5 fw-bold" for="siteNameInput">Site Name</label>
+                <input type="text" class="form-control " id="siteNameInput" aria-describedby="emailHelp"
+                    placeholder="BookMark Name">
+
+                <label class="mt-4 mb-3 fs-5 fw-bold" for="siteURLInput">Site URL</label>
+                <input type="text" class="form-control " id="siteURLInput" aria-describedby="emailHelp"
+                    placeholder="website URL">
+
+                <div class="mt-4"><button class="btn btn-primary" onclick="addSite()">submit</button></div>
+            </div>
+
+            <input type="text" onkeyup="searchSite(this.value)" class="form-control w-75 mt-4" id="searchInput" aria-describedby="emailHelp" placeholder="search...">
+
+            <table class="comingData mt-4 table text-start" id="comingData">
+                <tbody id="tableRow">
+                </tbody>
+            </table>
+        </div>
+        <p class="fw-bold mt-5">© 2019 Bookmarker Inc.</p>
+    </header>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
